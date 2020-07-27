@@ -44,9 +44,19 @@ function factorial(a) {
 }
 }
 
-const container  = document.querySelector('#container')
+// const container  = document.querySelector('#grid')
 
-for(let i=0; i<20; i++) {
-    let x = document.createElement('div');
-    container.appendChild(x);
-}
+// for(let i=0; i<20; i++) {
+//     let x = document.createElement('button');
+// 	container.appendChild(x);
+// 	x.setAttribute('class', 'button');
+// }
+
+
+let c;
+c=0;
+
+const display = document.querySelector('#scrn');
+display.innerHTML = c;
+
+function operator()

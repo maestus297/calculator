@@ -1,21 +1,42 @@
-#container {
-    display: grid;
+#grid {
+    display: inline-grid;
     grid-template-columns: repeat(4, 80px);
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    width: 320px;
-    height: 400px;
-    position: inline-grid;
+    width: 335px;
+    height: 405px;
+    position: absolute;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+#container {
+    border: 1px solid black;
+
 }
 
 #scrn {
-    display: flexbox;
+    display: block;
     transform: translate(-50%, -50%);
-    top: 50%;
+    top: 25%;
     left: 50%;
-    position: sticky;
+    position: absolute;
     width: 320px;
-    height: 20px;
+    height: 40px;
+    text-align: right;
+    padding-right: 50px;
+    font-size: larger;
+}
+
+.btn {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    border-radius: 1px;
+    border: 1px darkgray;
+    font-size: large;
 
 }
