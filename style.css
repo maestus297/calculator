@@ -1,42 +1,46 @@
 #grid {
     display: inline-grid;
-    grid-template-columns: repeat(4, 80px);
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    width: 335px;
-    height: 405px;
-    position: absolute;
+    grid-template-columns: repeat(4, 70px);
     column-gap: 5px;
     row-gap: 5px;
+    /*transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    position: absolute;*/
+
 }
 
 #container {
-    border: 1px solid black;
+        margin: 0 auto;
+        max-width: 960px; 
+        text-align: center;
+        padding-right: 10px; 
+        padding-left:  10px; 
+        
+    }
+
+#wrapper {
+    display: inline-block;
+    background-color: aliceblue;
+    border: 1px salmon;
 
 }
 
 #scrn {
-    display: block;
-    transform: translate(-50%, -50%);
-    top: 25%;
-    left: 50%;
-    position: absolute;
-    width: 320px;
-    height: 40px;
+    display: inline-block;
+
+    width: 15em;
     text-align: right;
-    padding-right: 50px;
+    padding-right: 10px;
+    padding-bottom: 10px;
     font-size: larger;
 }
 
 .btn {
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
     text-align: center;
     border-radius: 1px;
     border: 1px darkgray;
     font-size: large;
-
+    height: 2em;
 }
+

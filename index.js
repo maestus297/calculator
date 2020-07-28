@@ -54,9 +54,12 @@ function factorial(a) {
 
 
 let c;
-c=0;
+c = 0;
+
+function test(n) {
+	c = n;
+}
 
 const display = document.querySelector('#scrn');
 display.innerHTML = c;
 
-function operator()

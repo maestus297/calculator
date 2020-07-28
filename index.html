@@ -1,35 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html style="background-color: antiquewhite;">
 <head>
-<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta name ="viewport" content="text/html;charset=utf-8, width=device-width, initial-scale=1.0" http-equiv="Content-Type">
 <meta content="utf-8" http-equiv="encoding">
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <div id="container">
-        <div id="scrn">0</div>
-        <div id="grid">
-            <button class="btn">    </button>
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn">7</button>
-            <button class="btn">8</button>
-            <button class="btn">9</button>
-            <button class="btn"></button>
-            <button class="btn">4</button>
-            <button class="btn">5</button>
-            <button class="btn">6</button>
-            <button class="btn"></button>
-            <button class="btn">1</button>
-            <button class="btn">2</button>
-            <button class="btn">3</button>
-            <button class="btn"></button>
-            <button class="btn">0</button>
-            <button class="btn">.</button>
-            <button class="btn">AC</button>
-            <button class="btn"></button>
+        <div id="wrapper">
+            <div>
+                <div id="scrn">0</div>
+            </div>
+            <div id="grid">
+                <button class="btn"></button>
+                <button class="btn"></button>
+                <button class="btn"></button>
+                <button class="btn">÷</button>
+                <button class="btn" onclick="test(7)" value="7">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn">×</button>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn">-</button>
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn">+</button>
+                <button class="btn">0</button>
+                <button class="btn">.</button>
+                <button class="btn">AC</button>
+                <button class="btn">=</button>
+            </div>
         </div>
     </div>
 </body>
