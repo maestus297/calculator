@@ -37,29 +37,18 @@ function factorial(a) {
 	if(a==0){
 		return 1;
 	} else if (a>0) {
-	for(let i=1; i<=a;i++) {
+		for(let i=1; i<=a;i++) {
 		x *= i; 
-	}
+		}
 	return x;
-}
-}
-
-// const container  = document.querySelector('#grid')
-
-// for(let i=0; i<20; i++) {
-//     let x = document.createElement('button');
-// 	container.appendChild(x);
-// 	x.setAttribute('class', 'button');
-// }
-
-
-let c;
-c = 0;
-
-function test(n) {
-	c = n;
+	}	
 }
 
-const display = document.querySelector('#scrn');
-display.innerHTML = c;
+const display = document.getElementById("scrn");
+
+let x = '';
+function displayValue(n) {
+	x += "" + n;
+	display.value = x;
+}
 
