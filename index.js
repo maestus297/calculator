@@ -5,10 +5,10 @@ const operators   = {
 	'divide': function (a, b){return a / b},
 }
 
-let x = '';  
-let a;
-let b;
-let op;
+let x = '';  // display variable, concatanating string
+let a;       // operator parameter
+let b;       // operator parameter
+let op = ''; // operator designation e.g., 'plus', 'minus' etc.
 const display = document.getElementById("scrn");
 
 function displayValue(n) {
@@ -21,17 +21,26 @@ function displayValue(n) {
 function parameters(){
 	a = b;
 	b = 0;
-	x = ''
+	x = '';
 	display.value = x;
 }
 
 function assign(operator){
+	if(op != '') {
+		equal();
+		op = operator;
+		parameters();
+	} else {
 	op = operator;
+	parameters();
+	}
 }
 
 function equal() {
 	x = "" + (operators[op](a, b));
 	display.value = x;
+	b = parseInt(x);
+	op = '';
 	}
 
 	
@@ -41,6 +50,3 @@ function reset() {
 	a = '';
 	b = '';
 }
-
-
-
