@@ -1,54 +1,46 @@
-function add (a, b) {
-	return a + b;
+const operators   = {
+	'plus': function(a, b){ return a + b},
+	'minus': function(a, b){ return a - b},
+	'multiply': function (a, b) {return a*b},
+	'divide': function (a, b){return a/b},
 }
 
-function subtract (a, b) {
-	return a - b;
-}
-
-function sum (sum) {
-	let result=0;
-
-	for(let i=0; i<sum.length; i++){
-		result += sum[i];
-	}
-	return result;
-}
-
-function multiply (mul) {
-	let result=1;
-
-	for(let i=0; i<mul.length; i++){
-		result *= mul[i];
-	}
-	return result;
-}
-
-function power(a, b) {
-	let result = 1;
-	for(i=0; i<b;i++){
-		result *= a
-	}
-	return result;
-}
-
-function factorial(a) {
-	let x=1;
-	if(a==0){
-		return 1;
-	} else if (a>0) {
-		for(let i=1; i<=a;i++) {
-		x *= i; 
-		}
-	return x;
-	}	
-}
-
+let x = '';  
+let a;
+let b;
+let op;
 const display = document.getElementById("scrn");
 
-let x = '';
 function displayValue(n) {
 	x += "" + n;
 	display.value = x;
+	b = parseInt(x); 
 }
+
+
+function parameters(){
+	a = b;
+	b = 0;
+	x = ''
+	display.value = x;
+}
+
+function assign(operator){
+	op = operator;
+}
+
+function equal() {
+	x = "" + (operators[op](a, b));
+	display.value = x;
+	}
+
+	
+function reset() {
+	x = '';
+	display.value = x;
+	a = '';
+	b = '';
+}
+
+
 
