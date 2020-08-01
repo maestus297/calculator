@@ -37,14 +37,16 @@ function assign(operator){
 }
 
 function equal() {
+	if(op !='') {
 	x = "" + (operators[op](a, b));
+	b = parseInt(x);
+	op = '';
+	}
 	if(x == Infinity) {
 		display.value = "the cake is a lie";
 	} else {
 	display.value = x;
 	}
-	b = parseInt(x);
-	op = '';
 	
 	}
 
