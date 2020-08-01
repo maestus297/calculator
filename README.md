@@ -4,4 +4,5 @@ To do list:
 * figure out how to hold input values
 * test centering with transform: translate method (applied on container)
 * change screen type to window, input
+* Calculator's linear calculation logic currently requires invocation of "equals" key before the previous statement is evaluated.
 
